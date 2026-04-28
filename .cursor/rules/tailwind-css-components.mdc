@@ -1,0 +1,16 @@
+---
+description: Tailwind CSS component-file guidance for React JSX/TSX UI work.
+globs: **/*.{tsx,jsx}
+alwaysApply: false
+---
+
+# Tailwind CSS Component Rule
+
+Apply these patterns in React component files:
+
+- Keep Tailwind classes close to the element they style unless extracted into a shared component.
+- For repeated UI patterns, create reusable components instead of copying long class strings.
+- For conditional classes, use a clear class-composition helper pattern instead of string concatenation.
+- Keep variants predictable: base classes first, then conditional and responsive variants.
+- Include keyboard and focus-visible states on interactive components.
+- Prefer existing design tokens and shared primitives before introducing one-off utilities.

@@ -1,0 +1,28 @@
+---
+description: Tailwind CSS authoring standards for consistent, accessible, maintainable utility-first styling.
+alwaysApply: true
+---
+
+# Tailwind CSS Rule
+
+Follow these standards when writing or editing Tailwind CSS classes:
+
+- Prefer utility-first styling directly in markup for component-scoped styles.
+- Keep class lists readable: layout -> spacing -> typography -> color -> effects -> state.
+- Use responsive variants (`sm:`, `md:`, `lg:`, `xl:`) mobile-first; avoid redundant overrides.
+- Always include interactive states for controls (`hover:`, `focus-visible:`, `disabled:` when relevant).
+- Preserve accessible contrast and visible focus indicators.
+- Prefer semantic design tokens already in `tailwind.config` (colors, spacing, radius) over arbitrary values.
+- Use arbitrary values only when no token fits and the value is justified by the design.
+- Extract repeated utility combinations into reusable components or shared helpers instead of duplicating long class strings.
+- Avoid conflicting utilities in the same class list (for example multiple `p-*` values unless breakpoint-specific).
+- When class logic becomes conditional, use a class-composition helper pattern for clarity.
+
+## Example
+
+```tsx
+// Good: clear ordering, responsive behavior, and accessible states
+<button className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 disabled:cursor-not-allowed disabled:opacity-50 md:px-5">
+  Save
+</button>
+```

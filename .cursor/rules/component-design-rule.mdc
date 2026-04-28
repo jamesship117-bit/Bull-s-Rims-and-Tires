@@ -1,0 +1,19 @@
+---
+description: Component design standards for reusable, accessible, maintainable UI components.
+alwaysApply: true
+---
+
+# Component Design Rule
+
+Use these standards when creating or updating UI components:
+
+- Keep components single-purpose; split when one component handles unrelated concerns.
+- Prefer composition over large prop-driven branching and deeply nested conditionals.
+- Design stable, explicit prop APIs: clear names, sensible defaults, and minimal required props.
+- Keep visual variants predictable and finite (for example `size`, `variant`, `tone`), not free-form strings.
+- Forward native HTML props when appropriate and preserve `className`, `children`, and event handler ergonomics.
+- Preserve accessibility by default: semantic elements first, labels for inputs, keyboard support for interactive UI.
+- Avoid hard-coded business rules in shared components; inject behavior through props/callbacks.
+- Extract repeated markup and behavior into shared primitives before duplicating patterns.
+- Keep side effects out of presentational components; move data fetching/state orchestration to container layers.
+- Write components to be testable: deterministic rendering and explicit states (`loading`, `empty`, `error`).

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bull Rims & Tires | Contact</title>
+    <meta name="description" content="Contact Bull Rims & Tires for custom quotes on rims, tires, and lift kits." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html" aria-label="Bull Rims & Tires Home">
+          <span class="logo-bull">Bull</span> <span class="logo-rest">Rims & Tires</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" data-menu-toggle>
+          <span></span>
+        </button>
+        <nav class="nav-menu" data-nav-menu aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rims.html">Rims</a></li>
+            <li><a href="tires.html">Tires</a></li>
+            <li><a href="lift-kits.html">Lift Kits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="call-btn" href="tel:7135390730" aria-label="Call Bull Rims and Tires now">Call Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <p>Tell us about your vehicle and goals. We'll recommend the right setup and pricing.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <aside class="contact-panel reveal" aria-label="Contact details">
+            <h2 class="section-title">Contact Info</h2>
+            <div class="contact-item">
+              <strong>Phone</strong>
+              <a class="cta-phone" href="tel:7135390730" aria-label="Call 713 539 0730">(713) 539-0730</a>
+            </div>
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:Bullofficalrims@gmail.com">Bullofficalrims@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <strong>Hours</strong>
+              <span>Mon-Sat 9AM-6PM, Sun Closed</span>
+            </div>
+            <div class="contact-item">
+              <strong>Follow Us</strong>
+              <div class="social-row">
+                <a class="social-link" href="#" aria-label="Facebook">Facebook</a>
+                <a class="social-link" href="#" aria-label="Instagram">Instagram</a>
+                <a class="social-link" href="#" aria-label="TikTok">TikTok</a>
+              </div>
+            </div>
+          </aside>
+
+          <section class="form-panel reveal" aria-label="Quote request form">
+            <h2 class="section-title">Quote Request</h2>
+            <form id="quote-form" novalidate>
+              <label for="fullName">
+                Full Name
+                <input id="fullName" name="fullName" type="text" autocomplete="name" data-required />
+              </label>
+              <label for="phone">
+                Phone Number
+                <input id="phone" name="phone" type="tel" autocomplete="tel" data-required />
+              </label>
+              <label for="email">
+                Email
+                <input id="email" name="email" type="email" autocomplete="email" data-required />
+              </label>
+              <label for="vehicle">
+                Vehicle (Year / Make / Model)
+                <input id="vehicle" name="vehicle" type="text" data-required />
+              </label>
+              <label for="service">
+                Service Needed
+                <select id="service" name="service" data-required>
+                  <option value="">Select a service</option>
+                  <option>Rims</option>
+                  <option>Tires</option>
+                  <option>Lift Kit</option>
+                  <option>All Three</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label for="wheelSize">
+                Wheel Size Interest
+                <input id="wheelSize" name="wheelSize" type="text" placeholder='Example: 20"' />
+              </label>
+              <label for="message">
+                Message / Additional Details
+                <textarea id="message" name="message" data-required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit" aria-label="Submit quote request">Submit Request</button>
+            </form>
+            <div id="form-success" class="success-message" role="status" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-title">
+              <span class="logo-bull">Bull</span> <span class="logo-rest">Rims & Tires</span>
+            </h3>
+            <p>Houston's Premier Rim, Tire & Lift Kit Shop</p>
+          </div>
+          <div>
+            <h3 class="footer-title">Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="rims.html">Rims</a>
+              <a href="tires.html">Tires</a>
+              <a href="lift-kits.html">Lift Kits</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer-title">Contact</h3>
+            <p><a href="tel:7135390730">(713) 539-0730</a></p>
+            <p><a href="mailto:Bullofficalrims@gmail.com">Bullofficalrims@gmail.com</a></p>
+            <p>Mon-Sat 9AM-6PM, Sun Closed</p>
+          </div>
+          <div>
+            <h3 class="footer-title">Social</h3>
+            <div class="social-row">
+              <a class="social-link" href="#" aria-label="Facebook">Facebook</a>
+              <a class="social-link" href="#" aria-label="Instagram">Instagram</a>
+              <a class="social-link" href="#" aria-label="TikTok">TikTok</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">© 2025 Bull Rims & Tires. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

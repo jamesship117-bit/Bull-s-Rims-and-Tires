@@ -1,0 +1,19 @@
+---
+description: SVG and image handling standards for performance, accessibility, and consistent rendering.
+alwaysApply: true
+---
+
+# SVG/Image Handling Rule
+
+Use these standards when adding or updating image assets:
+
+- Prefer SVG for logos, icons, and simple vector artwork; use raster formats for photos or complex textures.
+- Optimize assets before commit (compress SVG and modern raster formats to reduce transfer size).
+- Use responsive images for large visuals (appropriate dimensions, `srcset`/`sizes` when supported).
+- Always provide meaningful `alt` text for informative images; use empty `alt=""` only for decorative images.
+- Define intrinsic dimensions (`width`/`height` or aspect-ratio) to prevent layout shift.
+- Avoid embedding huge base64 images directly in source unless there is a clear runtime reason.
+- For inline SVG, preserve accessibility (`role`, `aria-hidden`, or labels) based on whether content is decorative or semantic.
+- Keep SVG markup clean: remove editor metadata, hard-coded fills not needed for theming, and unused groups/paths.
+- Prefer currentColor-friendly SVG/icon patterns when icons should inherit text color.
+- Lazy-load non-critical images and prioritize above-the-fold hero/media content explicitly.

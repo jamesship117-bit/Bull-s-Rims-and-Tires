@@ -1,0 +1,11 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/rims", "destination": "/rims.html" },
+    { "source": "/tires", "destination": "/tires.html" },
+    { "source": "/lift-kits", "destination": "/lift-kits.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ]
+}
